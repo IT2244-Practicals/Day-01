@@ -37,7 +37,7 @@ days.sh
 chmod(Change Mode) – file permission command.
 444 - file is read only for user, server and admin.
 
-{ ~ }  » chmod 444 Names.txt
+{ ~ }  » chmod 444 Shavindra.txt
 
 ls -l	Long format (detailed view).
 
