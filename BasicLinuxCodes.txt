@@ -1,0 +1,80 @@
+touch - create a file.
+
+{ ~ }  » touch Shavindra.txt
+
+vi - Open a file
+	Switch to Insert Mode (to start typing):
+		>>Press i (insert) or a (append).
+
+	Save and Exit:
+		>>Press ctrl + c, then type :wq! and press Enter.
+
+{ ~ }  » vi Shavindra.txt
+
+more - give the data inside the file.
+
+{ ~ }  » more Shavindra.txt
+Shavindra
+Kanishka
+Dinuka
+Kavindu
+Ashen
+Tharusha
+Anushka
+
+dir - display all the files in the directory.
+dir *.txt - display all the files with .txt extension.
+
+{ ~ }  » dir *.txt
+Shavindra.txt  New.txt  New1.txt  New2.txt
+
+find - search for files and directories.
+find *y* - search for all the directories and files with the character "y"
+
+{ ~ }  » find *y*
+days.sh
+
+chmod(Change Mode) – file permission command.
+444 - file is read only for user, server and admin.
+
+{ ~ }  » chmod 444 Names.txt
+
+ls -l	Long format (detailed view).
+
+{ ~ }  » ls -l
+total 5
+lrwxrwxrwx  1 User User 21 Apr 29 17:06 bin -> /home/User/.local/bin
+-rw-rwxr--+ 1 User User 27 May  6 11:43 days.sh
+-r--r--r--+ 1 User User 57 May  6 11:24 Shavindra.txt
+-rwxrwxr--+ 1 User User 57 May  6 11:20 Shavindra.txtt~
+-rw-rwxr--+ 1 User User  0 May  6 11:25 New.txt
+-rw-rwxr--+ 1 User User  0 May  6 11:26 New1.txt
+-rw-rwxr--+ 1 User User  0 May  6 11:26 New2.txt
+-rw-rwxr--+ 1 User User 36 May  6 11:43 vi
+
+777 - Anyone(user, server and admin) can read write and execute cake.txt file.
+
+{ ~ }  » chmod 777 Shavindra.txt
+{ ~ }  » ls -l
+total 5
+lrwxrwxrwx  1 User User 21 Apr 29 17:06 bin -> /home/User/.local/bin
+-rw-rwxr--+ 1 User User 27 May  6 11:43 days.sh
+-rwxr--rwx+ 1 User User 57 May  6 11:24 Shavindra.txt
+-rwxrwxr--+ 1 User User 57 May  6 11:20 Shavindra.txt~
+-rw-rwxr--+ 1 User User  0 May  6 11:25 New.txt
+-rw-rwxr--+ 1 User User  0 May  6 11:26 New1.txt
+-rw-rwxr--+ 1 User User  0 May  6 11:26 New2.txt
+-rw-rwxr--+ 1 User User 36 May  6 11:43 vi
+
+
+{ ~ }  » chmod 547 Shavindra.txt
+{ ~ }  » ls -l
+total 5
+lrwxrwxrwx  1 User User 21 Apr 29 17:06 bin -> /home/User/.local/bin
+-rw-rwxr--+ 1 User User 27 May  6 11:43 days.sh
+-r-xr--rwx+ 1 User User 57 May  6 11:24 Shavindra.txt
+-rwxrwxr--+ 1 User User 57 May  6 11:20 Shavindra.txt~
+-rw-rwxr--+ 1 User User  0 May  6 11:25 New.txt
+-rw-rwxr--+ 1 User User  0 May  6 11:26 New1.txt
+-rw-rwxr--+ 1 User User  0 May  6 11:26 New2.txt
+-rw-rwxr--+ 1 User User 36 May  6 11:43 vi
